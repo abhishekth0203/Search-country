@@ -7,7 +7,7 @@
 
 .form-block {
   /* background-color:blue; */
-  background-image: linear-gradient(aqua ,green);
+  background-image: linear-gradient(aqua,green);
   display:flex;
   height: 100vh;
   flex-direction: column;
@@ -16,11 +16,11 @@
 }
 
 .form-block form {
-  background-color: rgba(255, 255, 255, 0.415);
+  background-color: rgba(243, 239, 239, 0.449);
   padding: 15px 10px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 25px;
 }
 
 .form-block form label {
@@ -38,3 +38,54 @@
   padding: 3px 10px;
 }
 
+
+/* media Quary for mobile phhone */
+@media screen and (max-width:600px) {
+  .form-block form{
+    background-color:rgba(243, 239, 239, 0.449) ;
+    /* padding: 10px 7px; */
+    gap: 15px;
+  }
+
+ .form-block form label{
+   font-size: 18px;
+ }
+
+ .form-block form input{
+   font-size: 12px;
+ }
+
+ .form-block form button{
+   font-size: 12px;
+  }
+
+}
+
+
+/* media quary for  talets */
+
+@media screen and (min-width:601px) and (max-width:800px) {
+  
+  .form-block{
+   background-image: linear-gradient(blue, rgb(5, 255, 155));
+  }
+
+   .form-block form{
+  background-color:rgba(243, 252, 247, 0.443) ;
+  /* padding: 10px 7px; */
+  gap: 20px;
+ }
+
+ .form-block form label{
+  font-size: 25px;
+ }
+
+ .form-block form input{
+  font-size: 16px;
+ }
+
+ .form-block form button{
+  font-size: 16px;
+ }
+
+}
